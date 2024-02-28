@@ -47,14 +47,13 @@ aggregate_sim_areas <- function(sim_areas_raw, concept_def) {
   horiz_index_strt <- horiz_index_end - n_sub + 1
 
   agg_dat <- mapply(
-    FUN = function(a, b, mat) rowSums(mat[, a:b]),
+    FUN = function(a, b, mat) rowSums(mat[, a:b, drop = FALSE]),
     a   = horiz_index_strt,
     b   = horiz_index_end,
     MoreArgs = list(mat = agg_dat)
   )
 
   colnames(agg_dat) <- concept_def$growth_and_yield$phase_name
-
   cbind(time, agg_dat)
 }
 
@@ -142,7 +141,7 @@ aggregate_sim_areaflows_events <- function(sim_areas_raw, concept_def) {
 
   # First, we require horizontal phase-wise summations of the cumulated areas
   agg_dat <- mapply(
-    FUN = function(a, b, mat) rowSums(mat[, a:b]),
+    FUN = function(a, b, mat) rowSums(mat[, a:b, drop = FALSE]),
     a   = horiz_index_strt,
     b   = horiz_index_end,
     MoreArgs = list(mat = agg_dat)

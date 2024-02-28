@@ -4,6 +4,11 @@
 # care4cmodel
 
 <!-- badges: start -->
+
+[![](https://www.r-pkg.org/badges/version/care4cmodel)](https://cran.r-project.org/package=care4cmodel)
+[![License: GPL (\>=
+3)](https://img.shields.io/badge/license-GPL%20(%3E=%203)-blue.svg)](https://cran.r-project.org/web/licenses/GPL-3)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/care4cmodel)](https://cran.r-project.org/package=care4cmodel)
 <!-- badges: end -->
 
 The goal of care4cmodel is to support comparisons of different
