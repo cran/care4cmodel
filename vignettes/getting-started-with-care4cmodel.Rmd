@@ -24,8 +24,9 @@ the R package *care4cmodel*. While we give a short introduction the concept of
 the package below, we assume that you already know why you want to use the 
 package, and that you are not completely unfamiliar with the idea behind it.
 Here, we will only provide scientific details if they are necessary for 
-understanding how to work with the package. In parallel, a scientific 
-publication is currently in preparation.
+understanding how to work with the package. For a complete and detailed 
+scientific presentation see 
+[@biber_et_al_2024](https://doi.org/10.1016/j.compag.2024.109091).
 
 
 ## 1 Concept of the package

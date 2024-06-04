@@ -1,6 +1,6 @@
-bb658a177751677dc4d0ef9cba3ac5da *DESCRIPTION
+6915c082d2c0c3c71248a8528ea0a918 *DESCRIPTION
 8caffdd3d954db5b54cb34cfec31524e *NAMESPACE
-5054807b95c6bb485fdaff663619d84a *NEWS.md
+12fe420c381516eb6817a51455fe166d *NEWS.md
 f0b7e06da7f11aca9c5ed5c9d5b61fa4 *R/area_evaluation.R
 dad262652d17e5723c8c1ab3b7f043f7 *R/area_models.R
 bb0eaaad0476742baf039f5e3ece688f *R/area_simulate.R
@@ -18,15 +18,15 @@ c3ce4c938af8625c2c34c8d7896613a3 *R/plot_c4c_base_result.R
 a8289f83a785b6a3e773d1d475acddcb *R/risk_models.R
 955e8b8822578510f8d39a333986a99f *R/setup_simulation.R
 9afb3cb0a9005334603084085deed22b *R/simulate_single_concept.R
-2462feac0cd90e66d663b6c1d86e85ac *README.md
-8734452029b1788abbaabfb268597f02 *build/partial.rdb
-0c6bf8275c4b6ebfb022a45962347c4e *build/vignette.rds
+b955d34b924b2d12fc5fd04abc40c403 *README.md
+e2c7189d2bcdd5787d7849f97b597b06 *build/partial.rdb
+6fbe4fcfed9a2489fe155b0191223037 *build/vignette.rds
 603d16e2268564862ff0a5e21d497f16 *data/pine_no_thinning_and_clearcut_1.rda
 25b105c7f0ea375828dab0ec31b53264 *data/pine_thinning_from_above_1.rda
 59c37678c3731e87c81e02c853a1aacb *inst/REFERENCES.bib
 70c51b0d5da1a95aa5e0a8eefbd1c6be *inst/doc/getting-started-with-care4cmodel.R
-b4050eb9b03c52f68103c30350a7d13c *inst/doc/getting-started-with-care4cmodel.Rmd
-7c089642f0f11bfba8072308f55d8c9b *inst/doc/getting-started-with-care4cmodel.html
+5d82dcb93bc59321374e70c55a84b9e0 *inst/doc/getting-started-with-care4cmodel.Rmd
+cd82e72b85bd90a532e2ee4a5307bb6d *inst/doc/getting-started-with-care4cmodel.html
 dbbd080375158e0031320a1602b325a7 *man/aggregate_raw_sim_rslt.Rd
 aa21d1c42d8a9d2e89037c3001ae0e25 *man/avg_extraction_distance.Rd
 7680dad422232d34bc05c181c608f220 *man/c4c_concept.Rd
@@ -62,5 +62,5 @@ a1fe9bcf51691ddb021d4a69901e47e0 *man/simulate_single_concept.Rd
 b9969f72e895a247cb43c20300c9ff74 *man/survival_weibull.Rd
 9cbf0cd25c28e09ca3ff730c043079be *man/validate_c4c_concept.Rd
 689ef8a505fc327c027a2a90be1d35f7 *man/wood_to_co2.Rd
-b4050eb9b03c52f68103c30350a7d13c *vignettes/getting-started-with-care4cmodel.Rmd
-419f06e0df24ba5ac417dfc31b0a8290 *vignettes/refs_vignette.bib
+5d82dcb93bc59321374e70c55a84b9e0 *vignettes/getting-started-with-care4cmodel.Rmd
+160c87fac198cc7b4455d02296edb3b1 *vignettes/refs_vignette.bib
