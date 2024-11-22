@@ -58,9 +58,6 @@ carbon_out <- fuel_and_co2_evaluation(sim_base_out, road_density_m_ha = 35)
 #> Joining with `by = join_by(phase_no, phase_name)`
 #> Joining with `by = join_by(time, harvest_type, phase_no, phase_name)`
 #> Joining with `by = join_by(time)`
-```
-
-``` r
 
 # Plot results (check the documentation with ?plot.c4c_base_result, and
 # ?plot.c4c_co2_result for all available options)

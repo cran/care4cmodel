@@ -49,8 +49,8 @@
 #'   \code{init_areas} is directly given for each subphase.
 #'
 #' @return A vector which is actually a sequence of three different blocks. This
-#'   format is required for simulations with \code{\link{deSolve}}. Each block
-#'   has as many elements as the total number of subpbases defined in
+#'   format is required for simulations with \code{\link[deSolve:ode]{ode}}.
+#'   Each block has as many elements as the total number of subpbases defined in
 #'   \code{concept_def}. Each element refers to each subphase in the order of
 #'   the phase sequence. The first block, contains the initial areas attributed
 #'   to all subphases in the order of the phase sequence. The second and the

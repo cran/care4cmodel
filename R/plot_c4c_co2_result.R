@@ -120,15 +120,15 @@ plot.c4c_co2_result <- function(x,
   if(plot_type == "em_by_type") {
     gg_out <- x$co2_agg_high |>
       dplyr::select(.data$time, .data$co2_cutting_total_kg,
-                    .data$co2_moving_total_kg, .data$co2_road_maint_total_l) |>
+                    .data$co2_moving_total_kg, .data$co2_road_maint_total_kg) |>
       tidyr::pivot_longer(cols      = tidyr::starts_with("co2_"),
                           names_to  = "emission_type",
                           values_to = "co2_equiv_kg") |>
       dplyr::mutate(
         emission_type = dplyr::case_when(
-          .data$emission_type == "co2_cutting_total_kg"    ~ "cutting",
-          .data$emission_type == "co2_moving_total_kg"     ~ "moving",
-          .data$emission_type == "co2_road_maint_total_l"  ~ "road maintenance"
+          .data$emission_type == "co2_cutting_total_kg"     ~ "cutting",
+          .data$emission_type == "co2_moving_total_kg"      ~ "moving",
+          .data$emission_type == "co2_road_maint_total_kg"  ~ "road maintenance"
         ) |> ordered(levels = c("cutting", "moving", "road maintenance"))
       ) |>
       ggplot() +
@@ -169,7 +169,7 @@ plot.c4c_co2_result <- function(x,
     gg_out <- x$co2_agg_high |>
       dplyr::mutate(
         co2_emiss = .data$co2_cutting_total_kg + .data$co2_moving_total_kg +
-          .data$co2_road_maint_total_l
+          .data$co2_road_maint_total_kg
       ) |>
       ggplot() +
       geom_path(
@@ -187,7 +187,7 @@ plot.c4c_co2_result <- function(x,
       dplyr::mutate(
         co2_emiss =
           .data$co2_cutting_total_kg + .data$co2_moving_total_kg +
-          .data$co2_road_maint_total_l
+          .data$co2_road_maint_total_kg
       ) |>
       ggplot() +
       geom_path(
@@ -207,7 +207,7 @@ plot.c4c_co2_result <- function(x,
         em_inc_ratio =
           (.data$co2_cutting_total_kg +
              .data$co2_moving_total_kg +
-             .data$co2_road_maint_total_l) /
+             .data$co2_road_maint_total_kg) /
           .data$co2_equiv_inc_kg
       ) |>
       ggplot() +

@@ -370,8 +370,8 @@ fuel_and_co2_evaluation <- function(x,
       x$sim_areas$areas[, 2:ncol(x$sim_areas$areas)] *
         fuel_cons_road_maintenance(road_density_m_ha)
       ),
-      co2_road_maint_total_l = fuel_to_co2(.data$fuel_road_maint_total_l,
-                                           "diesel")
+      co2_road_maint_total_kg = fuel_to_co2(.data$fuel_road_maint_total_l,
+                                            "diesel")
     ) |>
     dplyr::inner_join(x$sim_growth_and_yield$gyield_summary |>
                         dplyr::select(.data$time, .data$vol_standing,
@@ -383,7 +383,7 @@ fuel_and_co2_evaluation <- function(x,
     dplyr::select(-.data$vol_standing, -.data$vol_inc_ups) |>
     dplyr::relocate(.data$fuel_road_maint_total_l,
                     .after = .data$fuel_moving_total_l) |>
-    dplyr::relocate(.data$co2_road_maint_total_l ,
+    dplyr::relocate(.data$co2_road_maint_total_kg,
                     .after = .data$co2_moving_total_kg)
 
   # Output as a list
